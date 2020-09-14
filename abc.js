@@ -5,7 +5,7 @@ const { SECRET_ACCESS_KEY, ACCESS_KEY_ID } = process.env;
 
 const client = new elasticsearch.Client({
   hosts: ['https://search-docquik-f5yusla53yrryeaiviukr46ez4.ap-south-1.es.amazonaws.com/'],
-  log: 'e',
+  log: 'errornk',
   connectionClass,
   amazonES: {
     credentials: new AWS.EnvironmentCredentials(ACCESS_KEY_ID, SECRET_ACCESS_KEY)

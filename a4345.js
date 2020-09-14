@@ -5,6 +5,12 @@ const { SECRET_ACCESS_KEY, ACCESS_KEY_ID } = process.env;
 
 const client = new elasticsearch.Client({
 
+
+
+  connectionClass,
+  amazonES: {
+    credentials: new AWS.EnvironmentCredentials(ACCESS_KEY_ID, SECRET_ACCESS_KEY)
+  }
 });
 
 async function ping() {

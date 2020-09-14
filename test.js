@@ -1,7 +1,7 @@
 const fsPromises = require('fs').promises;
 const path = require('path');
-const from = path.join(__dirname, '/sysmlink/test.js');
-const to = './elasticSearch.js';
+const from =  './sysmlink/test.js';
+const to = './elastic.js';
 (async () => {
   try {
     console.log(from);

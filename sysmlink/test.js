@@ -5,6 +5,8 @@ const { SECRET_ACCESS_KEY, ACCESS_KEY_ID } = process.env;
 
 const client = new elasticsearch.Client({
 
+
+
 });
 
 async function ping() {
